@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./css/variables.css";
+@import "./css/reset.css";
+@import "./css/utilities.css";
+@import "./app/core/components/header/header.component.css";
+
