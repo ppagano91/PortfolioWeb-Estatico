@@ -5,14 +5,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { MainModule } from './main/main.module';
 
-const routes: Routes=[
-  {path:"portfolio", component: PortfolioComponent},
-  {path:"login", component: LoginComponent},
-  {path:"", redirectTo:"login", pathMatch:"full"}
+const routes: Routes = [
+  { path: '', component: PortfolioComponent },
+  // {path:"login", component: LoginComponent},
+  // { path: '', redirectTo: 'portfolio', pathMatch: 'full' },
 ];
 @NgModule({
-    declarations:[],
-    imports:[CoreModule, MainModule, RouterModule.forRoot(routes)],    
-    exports:[RouterModule],
+  declarations: [],
+  imports: [CoreModule, MainModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
